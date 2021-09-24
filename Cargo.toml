@@ -1,0 +1,31 @@
+[package]
+name = "Neo"
+description = "A Http Web Server For Serving a Single File via GET Request"
+version = "0.2.1"
+authors = ["Vishesh Choudhary <visheshc14@gmail.com>"]
+repository = "https://github.com/visheshc14/Neo-Rust/"
+keywords = [ "static", "http", "server", "file", "cli" ]
+categories = [ "command-line-utilities", "web-programming::http-server", "filesystem" ]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+exclude = [
+  ".gitattributes",
+  ".gitignore",
+  ".dockerignore",
+  "releases/*",
+  "infra/*",
+]
+
+[dependencies]
+log = "0.4.0"
+env_logger = "0.8.3"
+structopt = "0.3"
+tokio = { version = "1", features = [ "full" ] }
+hyper = { version = "0.14.7", features = [ "full" ] }
+hyper-rustls = "0.22.1"
+async-stream = "0.3.1"
+rustls = "0.19.1"
+rustls-pemfile = "0.2.1"
+tokio-rustls = "0.22.0"
+futures-util = "0.3.14"
