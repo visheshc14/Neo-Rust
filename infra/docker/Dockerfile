@@ -1,4 +1,4 @@
-FROM registry.github.com/visheshc14/Neo-Rust/builder:0.2.1 as builder
+FROM registry.gitlab.com/visheshc14/Neo-Rust/builder:0.2.1 as builder
 
 # Overwrite code in the base builder image
 COPY . /app
